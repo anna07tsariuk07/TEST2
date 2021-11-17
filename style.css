@@ -1,90 +1,90 @@
 * {
-    padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    padding: 0;
+    box-sizing: 0;
 }
 body {
-    background-color: antiquewhite;
+    padding: 30px;
 }
-div{
-    background-color: gray;
+.block p {
+    font-size: 18px;
+    line-height: 24px;
+    color: black;
+    margin: 0 0 20px 0;
+}
+.link {
+    color: red;
    
-    
 }
-.position {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    left: 50px;
-    top: 200px;
-    border-radius: 50% 50% 50% 50% / 36% 35% 65% 64% ;
+.link:hover {
+    color: rgb(47, 185, 5);
+    text-decoration: none;
 }
-.rt {
-    z-index: 10;
-    position: relative;
-    top: 130px;
-    left: 90px;
-    width: 20px;
-    height: 40px;
-    background-color: rgb(32, 32, 17);
-    border-radius:  55% 45% 47% 53% / 43% 34% 66% 57%  ;
+.block {
+    margin: 0 0 20px 0;
 }
-.eye {
-    z-index: 9;
-    left: 70px;
-    top: 75px;
-    background-color: white;
-    width: 20px;
-    height: 20px;
-    position: relative;
-    border-radius: 50% 50% 47% 53% / 43% 34% 66% 57% ;
+.inputtext {
+    height: 50px;
+    width: 400px;
+    border: 1px solid black;
+    font-size: 10px;
+    padding: 0 15px;
+    margin: 0 0 10px 0;
 }
-.eye2 {
-    z-index: 9;
-    left: 110px;
-    top: 57px;
-    background-color: white;
-    width: 20px;
-    height: 20px;
-    position: relative;
-    border-radius: 50% 50% 47% 53% / 43% 34% 66% 57% ;
+.inputbutton {
+    display: block;
+    width: 432px;
+    height: 50px;
+    background-color: cadetblue;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-radius: 2px;
+    margin: 0 0 10px 0;
 }
-.blac1 {
-    z-index: 10;
-    left: 115px ;
-    top: 43px;
-    background-color: black;
+.list li {
+    font-size: 18px;
+    margin: 0 0 15px 0;
+}
+.row:hover {
+    background-color: violet;
+}
+.link:visited {
+    color: rgb(184, 112, 29);
+}
+
+.inputbutton:hover {
+    background-color: slateblue;
+    color: yellow;
+    font-size: 24px;
+}
+.inputbutton:active {
+    background-color: rgb(161, 161, 161);
+    color: yellow;
+    font-size: 24px;
+}
+.inputtext:focus {
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+.list {
+    list-style-type: none;
+}
+.list li::before {
+    content: "";
     height: 10px;
     width: 10px;
-    position: relative;
-    border-radius:50% 50% 47% 53% / 43% 34% 66% 57%  ;
+    border-radius: 50%;
+    background-color: tomato;
+    display: inline-block;
+    margin: 0 10 0 0;
 }
-.blac2  {
-    z-index: 10;
-        left: 75px ;
-        top: 30px;
-        background-color: black;
-        height: 10px;
-        width: 10px;
-        position: relative;
-        border-radius:50% 50% 47% 53% / 43% 34% 66% 57%  ;
-    
+.list li:hover::before {
+    background-color: yellowgreen;
+    margin:  0 10px 0 0;
 }
-.ty {
-    border-radius: 64% 36% 60% 40% / 54% 42% 58% 46% ;
-    width: 50px;
-    height: 50px;
-    position: relative;
-    background-color: gray;
-    left:130px ;
-    top: 7px;
+.row::first-line {
+    font-size: 30px;
 }
-.ut {
-    border-radius:38% 62% 32% 68% / 49% 53% 47% 51%  ;
-    width: 50px;
-    height: 50px;
-    position: relative;
-    background-color: gray;
-    top: -50px;
-    left: 30px;
+.row::first-letter {
+    color: rgb(0, 109, 109);
 }
