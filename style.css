@@ -1,72 +1,55 @@
-*, ::after, ::before {
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 body {
-    background-color: rgb(83, 119, 107);
-    color: rgb(255, 255, 255);
-    font-size: 24px;
-    line-height: 32px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(35, 84, 245);
 }
-
-h1 {
-    font-size: 60px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    margin-top: 100px;
+img {
+    display: block;
+    width: 300px;
+    height: 220px;
 }
 .container {
-    margin: 0, auto;
+    width: 1100px;
+margin: 0 auto;
+max-width: 100%;
+padding: 10px;
 }
-nav {
-    margin: 50px 0;
-    background-color: rgb(238, 151, 130);
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em
 }
-a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+.card {
+    flex: 1 0 270px;
+    background: rgb(243, 243, 243);
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    align-self: normal;
 }
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    position: relative;
-}
-nav ul li {
-    display: inline-block;
-    background-color:rgb(238, 151, 130) ;
-}
-nav a {
-    display: block;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    padding: 0, 10px;
-    font-size: 20px;
-    line-height: 60px;
-}
-nav ul ul {
-   display: none;
-   position: absolute;
-}
-nav a:hover {
-    background-color: black;
-}
-nav ul ul li {
-width:67px;
-position: relative;
-float: none;
-display: list-item;
-}
-nav ul li:hover>ul {
-display: inherit;
-}
-p {
-    margin-top: 20px;
-}
-nav ul ul ul li {
-	position: relative;
-	top:-60px; 
-	left:66px;
+.card .txt {
+    padding: 10px;
     text-align: center;
+}
+h4 {
+margin-bottom: 10px;
+font-size: 1.2rem;
+}
+.card .img {
+    width: 100%;
+    height: 220px;
+    align-items: center;
+}
+.card .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
